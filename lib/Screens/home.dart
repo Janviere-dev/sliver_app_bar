@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sliver_app_bar/Screens/call.dart';
 import 'package:sliver_app_bar/Screens/message.dart';
+import 'package:sliver_app_bar/Screens/notification.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -123,9 +125,21 @@ class _HomeScreenState extends State<HomeScreen> {
         currentIndex: _selectedIndex,
         onTap: (index) {
           setState(() => _selectedIndex = index );
+          if (index == 1) {
+            Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const CallScreen()),
+            );
+          }
+
           if (index == 2) {
             Navigator.push(context,
-            MaterialPageRoute(builder: (context) => Message()),
+              MaterialPageRoute(builder: (context) => const Message()),
+            );
+          }
+
+          if (index == 3) {
+            Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const NotificationScreen() ),
             );
           }
         } ,
