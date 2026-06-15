@@ -1,6 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:sliver_app_bar/Screens/message.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -122,7 +121,16 @@ class _HomeScreenState extends State<HomeScreen> {
 
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
-        onTap: (index) => _selectedIndex = index,
+        onTap: (index) {
+          setState(() => _selectedIndex = index );
+          if (index == 2) {
+            Navigator.push(context,
+            MaterialPageRoute(builder: (context) => Message()),
+            );
+          }
+        } ,
+
+
         selectedItemColor: Colors.deepPurple,
         type: BottomNavigationBarType.fixed,
         items: [
