@@ -42,7 +42,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
           SliverAppBar(
             expandedHeight: 220,
             floating: true,
-            pinned: true,
+            snap: true,
             automaticallyImplyLeading: false,
             backgroundColor: Colors.deepPurple,
             foregroundColor: Colors.white,
@@ -63,14 +63,15 @@ class _NotificationScreenState extends State<NotificationScreen> {
                   fontWeight: FontWeight.w400,
                 ),
               ),
+                  
               background: Container(
                 // color: Colors.deepPurple,
-                // decoration: BoxDecoration(
-                //   image: DecorationImage(
-                //     image: AssetImage("assets/images.jpeg"),
-                //     fit: BoxFit.cover,
-                //   ),
-                // ),
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage("assets/images.jpeg"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
                child: FlutterLogo(
                 size: 120,
                 style: FlutterLogoStyle.horizontal,
