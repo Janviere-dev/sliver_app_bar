@@ -27,15 +27,11 @@ flutter run
 
 > Screenshot of the Notifications screen demonstrating a real-world `SliverAppBar` with `floating` and `snap` enabled — the bar hides as the user scrolls down and snaps fully back into view on scroll up.
 ![App Screenshot](image.png)
-
-```
-
-
-
+---
 
 ## widget Description
 
-- `SliverAppBar` This widget is a specialized, scroll-aware app bar that expands, contracts, floats, or hides as the user scrolls through a page. It lives inside a `CustomScrollView` because it is a sliver.
+`SliverAppBar`: This widget is a specialized, scroll-aware app bar that expands, contracts, floats, or hides as the user scrolls through a page. It lives inside a `CustomScrollView` because it is a sliver.
 
 ---
 
