@@ -25,7 +25,7 @@ flutter run
 
 ## Screenshots
 
-> Screenshot of the Notifications screen demonstrating a real-world `SliverAppBar` with `floating` and `snap` enabled — the bar hides as the user scrolls down and snaps fully back into view on scroll up.
+> Screenshot of the Notifications screen demonstrating a real-world `SliverAppBar` with `floating` and `snap` enabled. The bar hides as the user scrolls down and snaps fully back into view on scroll up.
 ![App Screenshot](image.png)
 ---
 
